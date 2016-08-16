@@ -390,7 +390,7 @@
         });
 
         // Responsive Media Elements
-        $(".media").fitVids();
+        //$(".media").fitVids();
 
     };
 
@@ -401,83 +401,83 @@
     function int_SliderPluguns() {
 
         // hero Text Slider
-        $('.intro-text-slider').owlCarousel({
-            slideSpeed: 400,
-            singleItem: true,
-            autoHeight: false,
-            navigation: true,  // Show next and prev buttons
-            pagination: true,  // Show pagination buttons
-            navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
-            responsive: true
-
-        });
+        //$('.intro-text-slider').owlCarousel({
+        //    slideSpeed: 400,
+        //    singleItem: true,
+        //    autoHeight: false,
+        //    navigation: true,  // Show next and prev buttons
+        //    pagination: true,  // Show pagination buttons
+        //    navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+        //    responsive: true
+        //
+        //});
 
         // Team Carousel
-        $('.team-carousel').owlCarousel({
-            autoPlay: false,
-            stopOnHover: true,
-            items: 4,
-            itemsDesktop: [1170, 3],
-            itemsDesktopSmall: [1000, 2],
-            itemsTabletSmall: [768, 1],
-            itemsMobile: [480, 1],
-            pagination: false,  // Hide pagination buttons
-            navigation: false,  // Hide next and prev buttons
-            navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"]
-        });
+        //$('.team-carousel').owlCarousel({
+        //    autoPlay: false,
+        //    stopOnHover: true,
+        //    items: 4,
+        //    itemsDesktop: [1170, 3],
+        //    itemsDesktopSmall: [1000, 2],
+        //    itemsTabletSmall: [768, 1],
+        //    itemsMobile: [480, 1],
+        //    pagination: false,  // Hide pagination buttons
+        //    navigation: false,  // Hide next and prev buttons
+        //    navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"]
+        //});
 
         // Testimonial Carousel
-        $('.testimonial-carousel').owlCarousel({
-            autoPlay: true,
-            autoHeight: true,
-            stopOnHover: true,
-            singleItem: true,
-            slideSpeed: 350,
-            pagination: true,  // Show pagination buttons
-            navigation: false,  // Hide next and prev buttons
-            navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
-            //  responsive: true
-        });
+        //$('.testimonial-carousel').owlCarousel({
+        //    autoPlay: true,
+        //    autoHeight: true,
+        //    stopOnHover: true,
+        //    singleItem: true,
+        //    slideSpeed: 350,
+        //    pagination: true,  // Show pagination buttons
+        //    navigation: false,  // Hide next and prev buttons
+        //    navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+        //    //  responsive: true
+        //});
 
         // Content Carousel
-        $('.content-carousel').owlCarousel({
-            autoPlay: true,
-            autoHeight: true,
-            stopOnHover: true,
-            singleItem: true,
-            slideSpeed: 500,
-            pagination: false,  // Hide pagination buttons
-            navigation: true,   // Show next and prev buttons
-            navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
-            responsive: true
-        });
+        //$('.content-carousel').owlCarousel({
+        //    autoPlay: true,
+        //    autoHeight: true,
+        //    stopOnHover: true,
+        //    singleItem: true,
+        //    slideSpeed: 500,
+        //    pagination: false,  // Hide pagination buttons
+        //    navigation: true,   // Show next and prev buttons
+        //    navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+        //    responsive: true
+        //});
 
         // Client Carousel
-        $('.client-carousel').owlCarousel({
-            autoPlay: 2500,
-            stopOnHover: true,
-            items: 6,
-            itemsDesktop: [1170, 5],
-            itemsDesktopSmall: [1024, 4],
-            itemsTabletSmall: [768, 3],
-            itemsMobile: [480, 2],
-            pagination: false,  // hide pagination buttons
-            navigation: false,  // hide next and prev buttons
-            navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"]
-        });
+        //$('.client-carousel').owlCarousel({
+        //    autoPlay: 2500,
+        //    stopOnHover: true,
+        //    items: 6,
+        //    itemsDesktop: [1170, 5],
+        //    itemsDesktopSmall: [1024, 4],
+        //    itemsTabletSmall: [768, 3],
+        //    itemsMobile: [480, 2],
+        //    pagination: false,  // hide pagination buttons
+        //    navigation: false,  // hide next and prev buttons
+        //    navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"]
+        //});
 
         // Image Carousel
-        $('.image-carousel').owlCarousel({
-            navigation: true,  // Show next and prev buttons
-            pagination: true,  // Show pagination buttons
-            slideSpeed: 350,
-            paginationSpeed: 400,
-            singleItem: true,
-            navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
-            autoPlay: false,
-            autoHeight: true,
-            responsive: true
-        });
+        //$('.image-carousel').owlCarousel({
+        //    navigation: true,  // Show next and prev buttons
+        //    pagination: true,  // Show pagination buttons
+        //    slideSpeed: 350,
+        //    paginationSpeed: 400,
+        //    singleItem: true,
+        //    navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+        //    autoPlay: false,
+        //    autoHeight: true,
+        //    responsive: true
+        //});
 
     };
 
@@ -488,33 +488,33 @@
     function int_lightbox() {
 
         // Portfolio Gallery Popup
-        $('.gallery-popup').magnificPopup({
-            delegate: '.gallery-popup-link',
-            type: 'image',
-            tLoading: 'Loading image #%curr%...',
-            mainClass: 'mfp-img-mobile',
-            gallery: {
-                enabled: true,
-                navigateByImgClick: true,
-                preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
-            },
-            image: {
-                tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
-                titleSrc: function (item) {
-                    return item.el.attr('title');
-                }
-            }
-        });
+        //$('.gallery-popup').magnificPopup({
+        //    delegate: '.gallery-popup-link',
+        //    type: 'image',
+        //    tLoading: 'Loading image #%curr%...',
+        //    mainClass: 'mfp-img-mobile',
+        //    gallery: {
+        //        enabled: true,
+        //        navigateByImgClick: true,
+        //        preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
+        //    },
+        //    image: {
+        //        tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+        //        titleSrc: function (item) {
+        //            return item.el.attr('title');
+        //        }
+        //    }
+        //});
 
         // Video popup (youtube, vimeo), map popup, iframe popup,
-        $('.popup-youtube, .popup-vimeo, .popup-gmaps, .video-popup').magnificPopup({
-            disableOn: 700,
-            type: 'iframe',
-            mainClass: 'mfp-fade',
-            removalDelay: 160,
-            preloader: false,
-            fixedContentPos: false
-        });
+        //$('.popup-youtube, .popup-vimeo, .popup-gmaps, .video-popup').magnificPopup({
+        //    disableOn: 700,
+        //    type: 'iframe',
+        //    mainClass: 'mfp-fade',
+        //    removalDelay: 160,
+        //    preloader: false,
+        //    fixedContentPos: false
+        //});
     };
 
     // ----------------------------------------------------------------
