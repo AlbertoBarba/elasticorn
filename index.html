@@ -96,7 +96,7 @@
 							<!-- LAYER NR. 2 -->
 							<h2 class="tp-caption lfb ltt tp-resizeme sc-title"
 							    data-x="center" data-hoffset="0"
-							    data-y="center" data-voffset="-25"
+							    data-y="center" data-voffset="0"
 							    data-speed="600"
 							    data-start="700"
 							    data-easing="Power4.easeOut"
@@ -181,42 +181,44 @@
 
 		<hr/>
 
-		<!--Latest Work Section-->
 		<section id="zero-downtime" class="section-padding">
 			<div class="container text-center">
-				<h2 class="page-title">Zero <span class="text-light">Downtime</span>
-				</h2>
+				<h2 class="page-title">Zero <span class="text-light">Downtime</span></h2>
 			</div>
 			<div class="container">
-				<div class="col-lg-3 col-md-12"><h3>The problem</h3></div>
-				<div class="col-lg-9 col-md-12">
-					<p>Whenever you need to adjust the mapping of your elasticsearch
-						index, all data has to be deleted.</p>
-					<p>This make total sense because when inserting a new document
-						into elasticsearch this document gets analyzed based on your
-						current mapping. So changing the mapping needs this process
-						to be restarted again.</p>
-					<p>So if you have a lot of data in your index, changing the
-						mapping could result in serious downtime for your users -
-						simply because you need to re-import and/or re-index all your
-						current data.</p>
+				<div class="row">
+					<div class="col-lg-4 col-md-12 col-lg-push-1"><h3>The problem</h3></div>
+					<div class="col-lg-6 col-md-12">
+						<p>Whenever you need to adjust the mapping of your elasticsearch
+							index, all data has to be deleted.</p>
+						<p>This makes total sense because when inserting a new document
+							into elasticsearch this document gets analyzed based on your
+							current mapping. So changing the mapping needs this process
+							to be restarted again.</p>
+						<p>So if you have a lot of data in your index, changing the
+							mapping could result in serious downtime for your users -
+							simply because you need to re-import and/or re-index all your
+							current data.</p>
+					</div>
 				</div>
 			</div>
 			<div class="container">
 				<hr>
 			</div>
 			<div class="container">
-				<div class="col-lg-3 col-md-12"><h3>The Solution</h3></div>
-				<div class="col-lg-9 col-md-12">
-					<p>Elasticearch suggest to work with two indices, one being the
-						<strong>LIVE</strong> index and the other being the <strong>standby</strong>
-						index.</p>
-					<p>The names of these indices do not matter, because you would
-						let your application "talk" to Elasticsearch using an alias
-						which points to your <strong>LIVE</strong> index.</p>
-					<p>If you need to change the mapping of your data you would do so
-						on the standby index, re-import all your data and then switch
-						the alias to your former standby index.</p>
+				<div class="row">
+					<div class="col-lg-4 col-md-12 col-lg-push-1"><h3>The Solution</h3></div>
+					<div class="col-lg-6 col-md-12">
+						<p>Elasticsearch suggests to work with two indices, one being the
+							<strong>LIVE</strong> index and the other being the <strong>standby</strong>
+							index.</p>
+						<p>The names of these indices do not matter, because you would
+							let your application "talk" to Elasticsearch using an alias
+							which points to your <strong>LIVE</strong> index.</p>
+						<p>If you need to change the mapping of your data you would do so
+							on the standby index, re-import all your data and then switch
+							the alias to your former standby index.</p>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -251,42 +253,44 @@
 				<h2 class="page-title">Save <span class="text-light">time</span></h2>
 			</div>
 			<div class="container">
-				<div class="col-md-8">
-					<h4>Tired of doing the same things over and over again in your
-						apps?</h4>
-					<p>Whenever you write an app that uses elasticsearch you are
-						faced with the same challenges.</p>
-					<ul>
-						<li>Setting up an index for your local development
-							environment
-						</li>
-						<li>Setting up (the same) index for your staging system</li>
-						<li>Setting up the same index up (a 3rd time) for your live
-							environment
-						</li>
-						<li>Configuring your mappings</li>
-					</ul>
-					<p>If you are doing it "right" you are also adding a couple of
-						more things to your app:</p>
-					<ul>
-						<li>Setting aliases</li>
-						<li>Making all things configurable</li>
-						<li>Setting up a live and standby index</li>
-						<li>Write a service that will apply mappings, copy over the
-							data, clean up the old mess.
-						</li>
-					</ul>
-					<p>The risk of letting out any of the points above are pretty
-						high - leading to a sub-par environment. Running error prone
-						setups cost time and more importantly: nerves.</p>
-					<h3>Elasticorn
-						<span class="text-light">saves you a lot of time</span></h3>
-					<p> by wrapping all these tasks into a meaningful configuration
-						and a couple of command line tasks that you won't want to
-						miss once you've used them.</p>
-				</div>
-				<div class="col-md-4">
-					<img src="images/stroke-of-midnight.jpg" class="img-responsive"/>
+				<div class="row">
+					<div class="col-md-8">
+						<h4>Tired of doing the same things over and over again in your
+							apps?</h4>
+						<p>Whenever you write an app that uses elasticsearch you are
+							faced with the same challenges.</p>
+						<ul>
+							<li>Setting up an index for your local development
+								environment
+							</li>
+							<li>Setting up (the same) index for your staging system</li>
+							<li>Setting the same index up (a 3rd time) for your live
+								environment
+							</li>
+							<li>Configuring your mappings</li>
+						</ul>
+						<p>If you are doing it "right" you are also adding a couple of
+							more things to your app:</p>
+						<ul>
+							<li>Setting aliases</li>
+							<li>Making all things configurable</li>
+							<li>Setting up a live and standby index</li>
+							<li>Write a service that will apply mappings, copy over the
+								data, clean up the old mess.
+							</li>
+						</ul>
+						<p>The risk of letting out any of the points above is pretty
+							high - leading to a sub-par environment. Running error prone
+							setups cost time and more importantly: nerves.</p>
+						<h3>Elasticorn
+							<span class="text-light">saves you a lot of time</span></h3>
+						<p> by wrapping all these tasks into a meaningful configuration
+							and a couple of command line tasks that you won't want to
+							miss once you've used them.</p>
+					</div>
+					<div class="col-md-4">
+						<img src="images/stroke-of-midnight.jpg" class="img-responsive"/>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -321,50 +325,52 @@
 		<!--</section>-->
 
 		<!-- Portfolio Section -->
-		<section id="convenience" class="section-padding white-bg">
+		<section id="convenience" class="section-padding-b white-bg">
 			<div class="container text-center">
 				<h2>Convenience <span class="text-light">for your team</span></h2>
 			</div>
 			<div class="container">
-				<div class="col-sm-12 col-md-8">
-					<p>So what is convenience when working in teams?</p>
-					<p>Our definition is that your team should focus on creating
-						great applications with elasticsearch. You should not fiddle
-						around different code-bases copying and pasting things
-						around.<br>Ideally all your projects should use the same
-						structure of configuration and behave in a predictable
-						manner.</p>
-					<h4>This is why we created Elasticorn.</h4>
-					<ul>
-						<li>All your configuration is in one place.</li>
-						<li>Everyone on your team knows where to look for it.</li>
-						<li>Close-to-none configuration (in fact, we allow you to
-							configure the path to your configuration so your devs
-							have to type less :))
-						</li>
-						<li>Strong conventions!</li>
-						<li>Reliable tooling</li>
-					</ul>
-					<p>In short: Manage your Elasticsearch indices with Elasticorn
-						and you will not want to go back.</p>
-					<h4>But there's more</h4>
-					<p>What if you have a running app from 2 years ago you now want
-						to manage with Elasticorn?</p>
-					<p>No worries, Elasticorn can:</p>
-					<ul>
-						<li>Take the current configuration of your app</li>
-						<li>Create config files from it</li>
-						<li>Set up your new live and standby indices</li>
-						<li>Apply the configured mapping</li>
-						<li>Copy your data over to the new live index</li>
-						<li>Rename your "old" index (for backup purposes)</li>
-						<li>Set the alias for your app</li>
-					</ul>
-					<p>You see, <strong>that's</strong> what we call "convenience".
-					</p>
-				</div>
-				<div class="col-sm-12 col-md-4">
-					<img src="images/golden-retriever-dog.jpg" class="img-responsive"/>
+				<div class="row">
+					<div class="col-sm-12 col-md-8">
+						<p>So what is convenience when working in teams?</p>
+						<p>Our definition is that your team should focus on creating
+							great applications with elasticsearch. You should not fiddle
+							around different code-bases copying and pasting things
+							around.<br>Ideally all your projects should use the same
+							structure of configuration and behave in a predictable
+							manner.</p>
+						<h4>This is why we created Elasticorn.</h4>
+						<ul>
+							<li>All your configuration is in one place.</li>
+							<li>Everyone on your team knows where to look for it.</li>
+							<li>Close-to-none configuration (in fact, we allow you to
+								configure the path to your configuration so your devs
+								have to type less :))
+							</li>
+							<li>Strong conventions!</li>
+							<li>Reliable tooling</li>
+						</ul>
+						<p>In short: Manage your Elasticsearch indices with Elasticorn
+							and you will not want to go back.</p>
+						<h4>But there's more</h4>
+						<p>What if you have a running app from 2 years ago you now want
+							to manage with Elasticorn?</p>
+						<p>No worries, Elasticorn can:</p>
+						<ul>
+							<li>Take the current configuration of your app</li>
+							<li>Create config files from it</li>
+							<li>Set up your new live and standby indices</li>
+							<li>Apply the configured mapping</li>
+							<li>Copy your data over to the new live index</li>
+							<li>Rename your "old" index (for backup purposes)</li>
+							<li>Set the alias for your app</li>
+						</ul>
+						<p>You see, <strong>that's</strong> what we call "convenience".
+						</p>
+					</div>
+					<div class="col-sm-12 col-md-4">
+						<img src="images/golden-retriever-dog.jpg" class="img-responsive"/>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -376,12 +382,12 @@
 			<div class="container">
 
 
-				<!--<h3>Installation</h3>-->
+				<h3>Installation</h3>
 
-				<!--<p>Composer based:</p>-->
+				<p>Composer based:</p>
 
-<!--<pre><code>composer require T3G/elasticorn-->
-<!--</code></pre>-->
+<pre><code>composer require t3g/elasticorn
+</code></pre>
 
 				<!--<p>Download as .phar:</p>-->
 
@@ -502,7 +508,7 @@ elastica=password=
 
 		</section>
 
-		<section id="download" class="section-padding-t">
+		<section id="download" class="section-padding">
 			<div class="container text-center">
 				<h2>Download</h2>
 			</div>
@@ -517,23 +523,16 @@ elastica=password=
 					<h3>Download as PHAR</h3>
 					<p>
 						<a href="http://elasticorn.net/elasticorn.phar" target="_blank" class="btn btn-md btn-color">Get PHAR</a>
-					</p>
-					<p>
 						<a href="http://elasticorn.net/elasticorn.phar.pubkey" target="_blank" class="btn btn-md btn-color">Get Public Key</a>
 					</p>
 				</div>
-				<p>Head over to <a href="https://github.com/TYPO3IncTeam/elasticorn">Github</a>
-					to get the latest release</p>
-
-
 			</div>
 		</section>
-		<!-- End Portfolio Section -->
 
 		<hr/>
 
 		<!-- Map section -->
-		<section class="map" id="map"></section>
+		<section class="map section-padding-t" id="map"></section>
 		<!-- End Map section -->
 
 		<!--Contact Info Section-->
@@ -610,16 +609,23 @@ elastica=password=
 				<!-- End Social -->
 
 				<h3>Legal Disclosure</h3>
-				<p>Information in accordance with section 5 TMG<br/><br/>TYPO3
-					GmbH<br/>Am Wehrhahn 41<br/>40211 D&uuml;sseldorf<br/>
-				<h4>Represented by</h4>Mathias Schreiber<br/>
-				<h4>Contact</h4>Telephone: 0175 93 86 731<br/>E-Mail:
-				<a href="mailto:info@typo3.com">info@typo3.com</a><br/>Internetaddress:
-				<a href="http://www.typo3.com" target="_blank">typo3.com</a><br/>
-				<h4>Register entry</h4>Entry in Handelsregister<br/>Register Number:
-				77950<br/>Register Court: Amtsgericht D&uuml;sseldorf<br/>
-				<h4>Capital</h4>Initial or original capital: 25000.00 &euro;<br/>
-				<h4>Disclaimer</h4>Accountability for content<br/>The contents of our
+				<p>Information in accordance with section 5 TMG<br/><br/>
+					TYPO3 GmbH<br/>
+					Am Wehrhahn 41<br/>
+					40211 D&uuml;sseldorf</p>
+				<h4>Represented by</h4>
+				<p>Mathias Schreiber</p>
+				<h4>Contact</h4>
+				<p>Telephone: 0175 93 86 731<br/>E-Mail:
+				<a href="mailto:info@typo3.com">info@typo3.com</a><br/>
+					Internetaddress: <a href="http://www.typo3.com" target="_blank">typo3.com</a></p>
+				<h4>Register entry</h4>
+				<p>Entry in Handelsregister<br/>Register Number:
+				77950<br/>Register Court: Amtsgericht D&uuml;sseldorf</p>
+				<h4>Capital</h4>
+				<p>Initial or original capital: 25000.00 &euro;</p>
+				<h4>Disclaimer</h4>
+				<p>Accountability for content<br/>The contents of our
 				pages have been created with the utmost care. However, we cannot
 				guarantee the contents' accuracy, completeness or topicality.
 				According to statutory provisions, we are furthermore responsible for
@@ -642,7 +648,7 @@ elastica=password=
 				reproductions of a work are allowed only for private use, so must not
 				serve either directly or indirectly for earnings. Unauthorized
 				utilization of copyrighted works is punishable (&sect; 106 of the
-				copyright law).<br/><br/><br/>
+				copyright law).</p>
 				<!--<p>This website uses Google Analytics, a web analytics service-->
 					<!--provided by Google, Inc. (“Google”). Google Analytics uses-->
 					<!--“cookies”, which are text files placed on your computer, to help-->
