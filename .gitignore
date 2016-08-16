@@ -1,0 +1,8 @@
+
+/phar-private.pem.passphrase-protected
+/phar-private.pem
+/phar-private-nopassphrase.pem
+/vendor/
+/.env
+/bin/
+.idea
